@@ -6,6 +6,7 @@
 
   [![NPM version](https://img.shields.io/npm/v/canvas-scrolling-background.svg?style=flat)](https://www.npmjs.com/package/canvas-scrolling-background)
   [![Known Vulnerabilities](https://snyk.io/test/github/robertcorponoi/canvas-scrolling-background/badge.svg)](https://snyk.io/test/github/robertcorponoi/canvas-scrolling-background)
+  ![npm](https://img.shields.io/npm/dt/canvas-scrolling-background)
   [![NPM downloads](https://img.shields.io/npm/dm/canvas-scrolling-background.svg?style=flat)](https://www.npmjs.com/package/canvas-scrolling-background)
   <a href="https://badge.fury.io/js/canvas-scrolling-background"><img src="https://img.shields.io/github/issues/robertcorponoi/canvas-scrolling-background.svg" alt="issues" height="18"></a>
   <a href="https://badge.fury.io/js/canvas-scrolling-background"><img src="https://img.shields.io/github/license/robertcorponoi/canvas-scrolling-background.svg" alt="license" height="18"></a>

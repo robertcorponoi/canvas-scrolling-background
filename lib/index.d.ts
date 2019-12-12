@@ -61,7 +61,11 @@ export default class ScrollingBackground {
      */
     constructor(canvas: HTMLCanvasElement, image: string, options: Position);
     /**
+     * Loads the background image and dispatches the signal so that the updating can happen.
      *
+     * @private
+     *
+     * @property {string} image The path to the background image to load.
      */
     private _loadImage;
     /**

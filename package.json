@@ -1,6 +1,6 @@
 {
   "name": "canvas-scrolling-background",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Manages an infinite scrolling background for your game",
   "scripts": {
     "tsconfig": "tsc --init --declaration --allowSyntheticDefaultImports --target esnext --outDir lib",
@@ -10,7 +10,8 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "bundle": "rollup -c",
-    "bundle:watch": "rollup -c --watch"
+    "bundle:watch": "rollup -c --watch",
+    "test": "node test/server.js"
   },
   "repository": {
     "type": "git",
@@ -28,20 +29,20 @@
   "license": "MIT",
   "module": "canvas-scrolling-background.js",
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/preset-typescript": "^7.7.2",
-    "rollup": "^1.26.3",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-typescript": "^7.7.4",
+    "rollup": "^1.27.10",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.3"
   },
   "dependencies": {
-    "hypergiant": "^2.5.2"
+    "hypergiant": "^3.0.1"
   }
 }
