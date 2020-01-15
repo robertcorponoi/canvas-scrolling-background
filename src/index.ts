@@ -9,7 +9,6 @@ import Options from './options/Options';
  * Manages an infinite scrolling background in any direction for your game
  */
 export default class ScrollingBackground {
-
   /**
    * A reference to the Board module.
    * 
@@ -73,13 +72,11 @@ export default class ScrollingBackground {
    * @param {string} [options.direction='left'] The direction that the background should scroll.
    */
   constructor(canvas: HTMLCanvasElement, image: string, options: Position) {
-
     this._board = new Board(canvas);
 
     this._options = new Options(options);
 
     this._loadImage(image);
-
   }
 
   /**
@@ -90,17 +87,13 @@ export default class ScrollingBackground {
    * @property {string} image The path to the background image to load.
    */
   private _loadImage(image: string) {
-
     this._background.addEventListener('load', () => {
-
       this._bgPosition2 = -this._background.width;
 
       this._loaded.dispatch();
-
     });
 
     this._background.src = image;
-
   }
 
   /**
@@ -116,7 +109,6 @@ export default class ScrollingBackground {
    * @param {number} [speed] The speed at which the background scrolls.
    */
   update(speed: number) {
-
     this._board.ctx.drawImage(this._background, this._bgPosition1, this._options.y);
 
     this._board.ctx.drawImage(this._background, this._bgPosition2, this._options.y);
@@ -125,10 +117,8 @@ export default class ScrollingBackground {
     let widthNormalized: number = this._background.width;
 
     if (this._options.direction === 'right') {
-
       speedNormalized = -speedNormalized;
       widthNormalized = -widthNormalized;
-
     }
 
     this._bgPosition1 -= speedNormalized;
@@ -137,7 +127,5 @@ export default class ScrollingBackground {
     if (Math.abs(this._bgPosition1) > this._background.width) this._bgPosition1 = this._bgPosition2 + widthNormalized;
 
     if (Math.abs(this._bgPosition2) > this._background.width) this._bgPosition2 = this._bgPosition1 + widthNormalized;
-
   }
-
 };

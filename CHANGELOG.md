@@ -1,3 +1,8 @@
+0.2.1 / 2019-01-14
+==================
+* [MISC] Updated dev dependencies to their latest versions.
+* [MISC] Updated license year to reflect new year.
+
 0.2.0 / 2019-12-11
 ==================
 * [MISC] Added missing test script.
