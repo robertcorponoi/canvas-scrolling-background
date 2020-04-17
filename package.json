@@ -1,6 +1,6 @@
 {
   "name": "canvas-scrolling-background",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Manages an infinite scrolling background for your game",
   "scripts": {
     "tsconfig": "tsc --init --declaration --allowSyntheticDefaultImports --target esnext --outDir lib",
